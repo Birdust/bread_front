@@ -25,3 +25,20 @@ function fadeOut(){
 }
 
 window.onload = fadeOut;
+
+function openMenu(evt, menuName) {
+   var i, x, tablinks;
+   x = document.getElementsByClassName("menu");
+   for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none"; // Hide all tabs by default
+   }
+   tablinks = document.getElementsByClassName("tablink");
+   for (i = 0; i < x.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" w3-yellow", ""); // Remove the color of all tablinks
+   }
+   document.getElementById(menuName).style.display = "block"; // Show the specific tab content
+   evt.currentTarget.firstElementChild.className += " w3-yellow"; // Add color to the clicked tablink
+}
+
+// Click on the first tablink on load
+document.getElementById("myLink").click();

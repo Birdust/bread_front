@@ -984,3 +984,38 @@ ol.numbered li:before {
    left: -19.5px;
    text-align: center;
 }
+
+
+
+
+.box-container {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+
+.twocolumns {
+   list-style-type: none;
+   padding: 0;
+   display: grid;
+   grid-template-columns: repeat(4, 1fr); /* Creates a four-column layout */
+   grid-gap: 5px; /* Adjust the gap between items */
+}
+
+.twocolumns li {
+   font-size: 30px; /* Matching the font size as before */
+   line-height: 1.5;
+   padding: 10px; /* Adjust the padding */
+   margin-bottom: 30px; /* Adjust space between rows */
+}
+
+/* If you are using the number style from .numbered, include these as well */
+.twocolumns {
+   counter-reset: section;
+   list-style-type: none;
+}
+
+.twocolumns li::before {
+   counter-increment: section;
+   /* Other styles from .numbered li:before */
+}

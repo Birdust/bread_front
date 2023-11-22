@@ -4,7 +4,9 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>home</title>
+   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+   <title>세네뜨리아</title>
 
    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 
@@ -87,15 +89,56 @@
 
 </section>
 
-<section class="products">
-<ol class="numbered">
-   <li>List item one</li>
-   <li>List item two</li>
-   <li>List item three</li>
-   <li>List item four</li>
-   <li>List item five</li>
-   <li>List item six</li>
-</ol>
+
+<section class="steps">
+   <h1 class="title">오늘의 빵</h1>
+   <div class="box-container" id="menu">
+      <div class="box">
+
+         <div class="w3-row w3-center w3-card w3-padding">
+            <a href="javascript:void(0)" onclick="openMenu(event, '오전');" id="myLink">
+               <div class="w3-col s6 tablink">오전</div>
+            </a>
+            <a href="javascript:void(0)" onclick="openMenu(event, '오후');">
+               <div class="w3-col s6 tablink">오후</div>
+            </a>
+         </div>
+
+         <div id="오전" class="w3-container menu w3-padding-48 w3-card">
+            <h5>Bread Basket</h5>
+            <p class="w3-text-grey">Assortment of fresh baked fruit breads and muffins 5.50</p><br>
+
+            <h5>Honey Almond Granola with Fruits</h5>
+            <p class="w3-text-grey">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p><br>
+
+            <h5>Belgian Waffle</h5>
+            <p class="w3-text-grey">Vanilla flavored batter with malted flour 7.50</p><br>
+
+            <h5>Scrambled eggs</h5>
+            <p class="w3-text-grey">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p><br>
+
+            <h5>Blueberry Pancakes</h5>
+            <p class="w3-text-grey">With syrup, butter and lots of berries 8.50</p>
+         </div>
+
+         <div id="오후" class="w3-container menu w3-padding-48 w3-card">
+            <h5>Coffee</h5>
+            <p class="w3-text-grey">Regular coffee 2.50</p><br>
+
+            <h5>Chocolato</h5>
+            <p class="w3-text-grey">Chocolate espresso with milk 4.50</p><br>
+
+            <h5>Corretto</h5>
+            <p class="w3-text-grey">Whiskey and coffee 5.00</p><br>
+
+            <h5>Iced tea</h5>
+            <p class="w3-text-grey">Hot tea, except not hot 3.00</p><br>
+
+            <h5>Soda</h5>
+            <p class="w3-text-grey">Coke, Sprite, Fanta, etc. 2.50</p>
+         </div>
+      </div>
+   </div>
 </section>
 
 
@@ -210,21 +253,10 @@
    </div>
 
    <div class="more-btn">
-      <a href="menu.html" class="btn">veiw all</a>
+      <a href="menu.html" class="btn">모두 보기</a>
    </div>
 
 </section>
-
-
-
-
-
-
-
-
-
-
-
 
 
 <footer class="footer">
@@ -234,27 +266,27 @@
       <div class="box">
          <img src="images/email-icon.png" alt="">
          <h3>our email</h3>
-         <a href="mailto:shaikhanas@gmail.com">asdf@gmail.com</a>
-         <a href="mailto:anasbhai@gmail.com">asdf@gmail.com</a>
+         <a href="mailto:shaikhanas@gmail.com">bread@gmail.com</a>
+         <a href="mailto:anasbhai@gmail.com">bread@gmail.com</a>
       </div>
 
       <div class="box">
          <img src="images/clock-icon.png" alt="">
-         <h3>opening hours</h3>
+         <h3>영업 시간</h3>
          <p>09:00am to 17:00pm </p>
       </div>
 
       <div class="box">
          <img src="images/map-icon.png" alt="">
          <h3>주소</h3>
-         <a href="https://www.google.com/maps">세명대학교~~~~</a>
+         <a href="https://www.google.com/maps">27136 충청북도 제천시 세명로 65 세명대학교 학술관 2층</a>
       </div>
 
       <div class="box">
          <img src="images/phone-icon.png" alt="">
          <h3>our number</h3>
-         <a href="tel:1234567890">+123-456-7890</a>
-         <a href="tel:1112223333">+111-222-3333</a>
+         <a href="tel:0436491400">TEL.043.649.1400</a>
+         <a href="tel:01034332292">TEL.010.3433.2292</a>
       </div>
 
    </section>
