@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my orders</title>
+
+    <!-- font cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+
+
+
+</head>
+<body>
+
+
+<header class="header">
+
+    <section class="flex">
+
+        <a href="home.html" class="logo">senetteria</a>
+
+        <nav class="navbar">
+            <a href="home.html">Home</a>
+            <a href="about.html">소개</a>
+            <a href="menu.html">메뉴</a>
+            <a href="orders.html">예약</a>
+            <a href="contact.html">문의</a>
+        </nav>
+
+        <div class="icons">
+            <a href="search.html"><i class="fas fa-search"></i></a>
+            <a href="cart.html"><i class="fas fa-shopping-cart"></i><span>(3)</span></a>
+            <div id="user-btn" class="fas fa-user"></div>
+            <div id="menu-btn" class="fas fa-bars"></div>
+        </div>
+
+        <div class="profile">
+            <p class="name">회원1</p>
+            <div class="flex">
+                <a href="profile.html" class="btn">정보</a>
+                <a href="#" class="delete-btn">로그아웃</a>
+            </div>
+            <p class="account"><a href="login.html">로그인</a> or <a href="register.html">회원가입</a></p>
+        </div>
+
+    </section>
+
+</header>
+
+<div class="heading">
+    <h3>리뷰</h3>
+    <p><a href="home.html">home </a> <span> / review</span></p>
+</div>
+
+
+
+<section class="reviews">
+
+    <h1 class="title">최근 리뷰</h1>
+
+    <div class="swiper reviews-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide">
+                <img src="images/people.png" alt="">
+                <p>빵이 맛있습니다.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <h3>김언지</h3>
+            </div>
+
+            <div class="swiper-slide slide">
+                <img src="images/people.png" alt="">
+                <p>맛있어요.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <h3>김민지</h3>
+            </div>
+
+            <div class="swiper-slide slide">
+                <img src="images/people.png" alt="">
+                <p>적당히 달고 맛있습니다.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <h3>이한준</h3>
+            </div>
+
+            <div class="swiper-slide slide">
+                <img src="images/people.png" alt="">
+                <p>나쁘지 않은 맛입니다.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <h3>전태현</h3>
+            </div>
+
+            <div class="swiper-slide slide">
+                <img src="images/people.png" alt="">
+                <p>맛있습니다.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <h3>김영훈</h3>
+            </div>
+
+            <div class="swiper-slide slide">
+                <img src="images/people.png" alt="">
+                <p>맛있습니다.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <h3>김가나</h3>
+            </div>
+
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+    </div>
+
+</section>
+
+
+
+
+<section class="contact">
+
+    <div class="row">
+<link href="/css/star.css" rel="stylesheet"/>
+
+<form class="mb-3" name="myform" id="myform" method="post">
+    <fieldset>
+        <span class="text-bold">별점을 선택해주세요</span>
+        <input type="radio" name="reviewStar" value="5" id="rate1"><label
+            for="rate1">★</label>
+        <input type="radio" name="reviewStar" value="4" id="rate2"><label
+            for="rate2">★</label>
+        <input type="radio" name="reviewStar" value="3" id="rate3"><label
+            for="rate3">★</label>
+        <input type="radio" name="reviewStar" value="2" id="rate4"><label
+            for="rate4">★</label>
+        <input type="radio" name="reviewStar" value="1" id="rate5"><label
+            for="rate5">★</label>
+    </fieldset>
+    <div>
+		<textarea class="col-auto form-control" type="text" id="reviewContents"
+                  placeholder="리뷰를 남겨주세요!"></textarea>
+        <a href="menu.html" class="btn">확인</a>
+        <a href="menu.html" class="btn">취소</a>
+    </div>
+</form>
+
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<footer class="footer">
+
+
+    <div class="credit">&copy; ---</div>
+
+</footer>
+
+<div class="loader">
+    <img src="images/loader.gif" alt="">
+</div>
+
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+<script src="js/script.js"></script>
+
+<script>
+
+    var swiper = new Swiper(".reviews-slider", {
+        loop:true,
+        grabCursor:true,
+        spaceBetween: 20,
+        pagination: {
+            el: ".swiper-pagination",
+        },
+        breakpoints: {
+            550: {
+                slidesPerView: 1,
+            },
+            768: {
+                slidesPerView: 2,
+            },
+            1024: {
+                slidesPerView: 3,
+            },
+        },
+    });
+
+</script>
+
+</body>
+</html>
